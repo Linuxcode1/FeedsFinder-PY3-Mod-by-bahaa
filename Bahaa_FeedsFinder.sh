@@ -1,5 +1,5 @@
 VERSION=3.11
-PLUGIN_PATH='/usr/lib/enigma2/python/Plugins/Extensions/MultiStalker'
+
 PYTHON_VERSION=$(python -c"import platform; print(platform.python_version())")
 
 
@@ -45,9 +45,9 @@ echo "#########################################################"
 echo "#                Restart Enigma2 GUI                    #"
 echo "#########################################################"
 sleep 2
-if [ $OS = 'DreamOS' ]; then
-systemctl restart enigma2
-else
-killall -9 enigma2
-fi
-exit 0
+#if [ $OS = 'DreamOS' ]; then
+#systemctl restart enigma2
+#else
+#killall -9 enigma2
+#fi
+#exit 0
